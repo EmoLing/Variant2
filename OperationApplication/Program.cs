@@ -49,6 +49,7 @@ namespace OperationApplication // Note: actual namespace depends on the project 
                 '-' => number1 - number2,
                 '*' => number1 * number2,
                 '/' => number1 / number2,
+                _ => throw new NotImplementedException(),
             };
 
             Console.WriteLine($"{number1} {@operator} {number2} = {result}");
