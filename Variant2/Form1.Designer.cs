@@ -36,6 +36,7 @@
             this.butMinus = new System.Windows.Forms.Button();
             this.butMultiple = new System.Windows.Forms.Button();
             this.butDivide = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // number1Box
@@ -114,11 +115,21 @@
             this.butDivide.UseVisualStyleBackColor = true;
             this.butDivide.Click += new System.EventHandler(this.butDivide_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(236, 39);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 94);
+            this.listBox1.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(513, 299);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.butDivide);
             this.Controls.Add(this.butMultiple);
             this.Controls.Add(this.butMinus);
@@ -144,5 +155,6 @@
         private Button butMinus;
         private Button butMultiple;
         private Button butDivide;
+        private ListBox listBox1;
     }
 }
